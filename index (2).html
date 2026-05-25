@@ -1,0 +1,1251 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Dr Laith Barnouti | Specialist Plastic & Reconstructive Surgeon Sydney</title>
+  <meta name="description" content="Dr Laith Barnouti is a FRACS-qualified Specialist Plastic and Reconstructive Surgeon in Sydney, Australia. With 15+ years experience in facial surgery, breast surgery, and body contouring." />
+  <meta name="keywords" content="Dr Laith Barnouti, plastic surgeon Sydney, reconstructive surgeon Australia, FRACS surgeon, facelift Sydney, rhinoplasty Sydney, breast augmentation Sydney, tummy tuck Sydney, short scar surgery" />
+  <meta name="author" content="Dr Laith Barnouti" />
+  <meta property="og:title" content="Dr Laith Barnouti | Specialist Plastic Surgeon Sydney" />
+  <meta property="og:description" content="FRACS-qualified Specialist Plastic & Reconstructive Surgeon with 15+ years of expertise in facial, breast, and body procedures. Sydney, Australia." />
+  <meta property="og:type" content="website" />
+  <link rel="canonical" href="https://www.drlaithbarnouti.com.au/" />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400&family=Jost:wght@300;400;500;600&display=swap" rel="stylesheet">
+
+  <style>
+    :root {
+      --cream: #eef4f8;
+      --deep: #376B8C;
+      --gold: #376B8C;
+      --gold-light: #5a91b5;
+      --muted: #4a6b80;
+      --border: #c5dae8;
+      --white: #ffffff;
+      --section-gap: 100px;
+    }
+
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    html { scroll-behavior: smooth; }
+
+    body {
+      font-family: 'Jost', sans-serif;
+      background: var(--cream);
+      color: var(--deep);
+      font-size: 17px;
+      line-height: 1.75;
+      overflow-x: hidden;
+    }
+
+    /* ── NAVBAR ── */
+    nav {
+      position: fixed;
+      top: 0; left: 0; right: 0;
+      z-index: 100;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 22px 60px;
+      background: rgba(247,244,239,0.92);
+      backdrop-filter: blur(12px);
+      border-bottom: 1px solid var(--border);
+      transition: padding 0.3s;
+    }
+
+    .nav-brand {
+      font-family: 'Cormorant Garamond', serif;
+      font-size: 20px;
+      font-weight: 500;
+      color: var(--deep);
+      text-decoration: none;
+      letter-spacing: 0.03em;
+      line-height: 1.2;
+    }
+
+    .nav-brand span {
+      display: block;
+      font-family: 'Jost', sans-serif;
+      font-size: 10px;
+      font-weight: 400;
+      letter-spacing: 0.2em;
+      text-transform: uppercase;
+      color: var(--gold);
+    }
+
+    .nav-links {
+      display: flex;
+      align-items: center;
+      gap: 36px;
+      list-style: none;
+    }
+
+    .nav-links a {
+      font-family: 'Jost', sans-serif;
+      font-size: 13px;
+      font-weight: 500;
+      letter-spacing: 0.15em;
+      text-transform: uppercase;
+      color: var(--muted);
+      text-decoration: none;
+      transition: color 0.25s;
+    }
+
+    .nav-links a:hover { color: var(--gold); }
+
+    .nav-links .btn-nav {
+      background: var(--deep);
+      color: var(--cream);
+      padding: 10px 24px;
+      letter-spacing: 0.12em;
+      transition: background 0.25s;
+    }
+
+    .nav-links .btn-nav:hover { background: var(--gold); color: var(--white); }
+
+    /* ── HERO ── */
+    .hero {
+      min-height: 100vh;
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      padding-top: 86px;
+    }
+
+    .hero-left {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      padding: 80px 60px 80px 60px;
+    }
+
+    .hero-eyebrow {
+      font-size: 11px;
+      font-weight: 500;
+      letter-spacing: 0.25em;
+      text-transform: uppercase;
+      color: var(--gold);
+      margin-bottom: 24px;
+    }
+
+    .hero-left h1 {
+      font-family: 'Cormorant Garamond', serif;
+      font-size: clamp(42px, 5vw, 68px);
+      font-weight: 300;
+      line-height: 1.1;
+      color: var(--deep);
+      margin-bottom: 28px;
+    }
+
+    .hero-left h1 em {
+      font-style: italic;
+      color: var(--gold);
+    }
+
+    .hero-left p {
+      font-size: 16px;
+      color: var(--muted);
+      max-width: 480px;
+      margin-bottom: 44px;
+      line-height: 1.85;
+    }
+
+    .hero-cta {
+      display: flex;
+      gap: 16px;
+      flex-wrap: wrap;
+    }
+
+    .btn-primary {
+      display: inline-block;
+      background: var(--deep);
+      color: var(--cream);
+      padding: 15px 36px;
+      font-size: 12px;
+      font-weight: 500;
+      letter-spacing: 0.18em;
+      text-transform: uppercase;
+      text-decoration: none;
+      transition: background 0.25s, transform 0.2s;
+    }
+
+    .btn-primary:hover { background: var(--gold); transform: translateY(-2px); }
+
+    .btn-outline {
+      display: inline-block;
+      border: 1.5px solid var(--deep);
+      color: var(--deep);
+      padding: 14px 34px;
+      font-size: 12px;
+      font-weight: 500;
+      letter-spacing: 0.18em;
+      text-transform: uppercase;
+      text-decoration: none;
+      transition: all 0.25s;
+    }
+
+    .btn-outline:hover { background: var(--deep); color: var(--cream); }
+
+    .hero-stats {
+      display: flex;
+      gap: 44px;
+      margin-top: 60px;
+      padding-top: 44px;
+      border-top: 1px solid var(--border);
+    }
+
+    .stat-item { text-align: left; }
+
+    .stat-number {
+      font-family: 'Cormorant Garamond', serif;
+      font-size: 40px;
+      font-weight: 300;
+      color: var(--deep);
+      line-height: 1;
+    }
+
+    .stat-label {
+      font-size: 11px;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+      color: var(--muted);
+      margin-top: 6px;
+    }
+
+    .hero-right {
+      position: relative;
+      overflow: hidden;
+      background: linear-gradient(145deg, #2c231a 0%, #1a1410 60%, #3a2d20 100%);
+    }
+
+    .hero-right::before {
+      content: '';
+      position: absolute;
+      inset: 0;
+      background:
+        radial-gradient(ellipse at 30% 50%, rgba(184,150,90,0.12) 0%, transparent 60%),
+        radial-gradient(ellipse at 80% 20%, rgba(184,150,90,0.06) 0%, transparent 40%);
+    }
+
+    .hero-right-content {
+      position: absolute;
+      bottom: 60px;
+      left: 50px;
+      right: 50px;
+    }
+
+    .hero-badge {
+      display: inline-flex;
+      align-items: center;
+      gap: 12px;
+      background: rgba(184,150,90,0.15);
+      border: 1px solid rgba(184,150,90,0.3);
+      color: var(--gold-light);
+      padding: 10px 20px;
+      font-size: 12px;
+      letter-spacing: 0.15em;
+      text-transform: uppercase;
+      margin-bottom: 16px;
+    }
+
+    .hero-badge::before {
+      content: '✦';
+      font-size: 8px;
+    }
+
+    .hero-right-content p {
+      font-family: 'Cormorant Garamond', serif;
+      font-size: 28px;
+      font-style: italic;
+      color: rgba(247,244,239,0.75);
+      line-height: 1.4;
+    }
+
+    .hero-right-content cite {
+      display: block;
+      font-family: 'Jost', sans-serif;
+      font-style: normal;
+      font-size: 11px;
+      letter-spacing: 0.15em;
+      text-transform: uppercase;
+      color: var(--gold);
+      margin-top: 16px;
+    }
+
+    /* ── INTRO STRIP ── */
+    .intro-strip {
+      background: var(--deep);
+      padding: 36px 60px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 20px;
+      flex-wrap: wrap;
+    }
+
+    .intro-strip p {
+      font-size: 13px;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+      color: rgba(247,244,239,0.6);
+    }
+
+    .intro-strip .credentials {
+      display: flex;
+      gap: 36px;
+      flex-wrap: wrap;
+    }
+
+    .credential-tag {
+      font-size: 12px;
+      font-weight: 500;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+      color: var(--gold-light);
+      display: flex;
+      align-items: center;
+      gap: 8px;
+    }
+
+    .credential-tag::before {
+      content: '';
+      width: 5px;
+      height: 5px;
+      background: var(--gold);
+      display: inline-block;
+      flex-shrink: 0;
+    }
+
+    /* ── SECTION STYLES ── */
+    section { padding: var(--section-gap) 60px; }
+
+    .section-eyebrow {
+      font-size: 11px;
+      font-weight: 500;
+      letter-spacing: 0.25em;
+      text-transform: uppercase;
+      color: var(--gold);
+      margin-bottom: 16px;
+    }
+
+    .section-title {
+      font-family: 'Cormorant Garamond', serif;
+      font-size: clamp(34px, 4vw, 52px);
+      font-weight: 300;
+      line-height: 1.15;
+      color: var(--deep);
+      margin-bottom: 24px;
+    }
+
+    .section-lead {
+      font-size: 17px;
+      color: var(--muted);
+      line-height: 1.85;
+      max-width: 680px;
+      margin-bottom: 60px;
+    }
+
+    /* ── ABOUT PREVIEW ── */
+    .about-preview {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 80px;
+      align-items: center;
+      background: var(--white);
+    }
+
+    .about-visual {
+      position: relative;
+      height: 600px;
+      background: linear-gradient(135deg, #2c231a, #1a1410);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .about-visual-inner {
+      text-align: center;
+      padding: 40px;
+    }
+
+    .about-visual .monogram {
+      font-family: 'Cormorant Garamond', serif;
+      font-size: 120px;
+      font-weight: 300;
+      color: rgba(184,150,90,0.15);
+      line-height: 1;
+      display: block;
+    }
+
+    .about-visual .fracs-badge {
+      display: inline-block;
+      border: 1px solid rgba(184,150,90,0.4);
+      color: var(--gold-light);
+      padding: 12px 28px;
+      font-size: 13px;
+      letter-spacing: 0.2em;
+      text-transform: uppercase;
+      margin-top: 20px;
+    }
+
+    .about-content { padding: 60px 60px 60px 0; }
+
+    .about-content p {
+      font-size: 16px;
+      color: var(--muted);
+      line-height: 1.9;
+      margin-bottom: 20px;
+    }
+
+    .about-content p strong {
+      color: var(--deep);
+      font-weight: 500;
+    }
+
+    .fellowship-list {
+      margin: 30px 0;
+      display: flex;
+      flex-direction: column;
+      gap: 12px;
+    }
+
+    .fellowship-item {
+      display: flex;
+      align-items: center;
+      gap: 14px;
+      font-size: 14px;
+      color: var(--muted);
+    }
+
+    .fellowship-item::before {
+      content: '';
+      width: 32px;
+      height: 1px;
+      background: var(--gold);
+      flex-shrink: 0;
+    }
+
+    /* ── COMPETENCIES ── */
+    .competencies { background: var(--cream); }
+
+    .competencies-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 2px;
+      margin-top: 60px;
+    }
+
+    .comp-card {
+      background: var(--white);
+      padding: 44px 36px;
+      position: relative;
+      transition: transform 0.3s;
+      border-top: 3px solid transparent;
+    }
+
+    .comp-card:hover {
+      transform: translateY(-6px);
+      border-top-color: var(--gold);
+    }
+
+    .comp-number {
+      font-family: 'Cormorant Garamond', serif;
+      font-size: 52px;
+      font-weight: 300;
+      color: var(--border);
+      line-height: 1;
+      margin-bottom: 20px;
+    }
+
+    .comp-card h3 {
+      font-family: 'Cormorant Garamond', serif;
+      font-size: 22px;
+      font-weight: 500;
+      color: var(--deep);
+      margin-bottom: 14px;
+      line-height: 1.3;
+    }
+
+    .comp-card p {
+      font-size: 15px;
+      color: var(--muted);
+      line-height: 1.8;
+    }
+
+    /* ── EXPERTISE ── */
+    .expertise { background: var(--deep); }
+
+    .expertise .section-eyebrow { color: var(--gold); }
+    .expertise .section-title { color: var(--cream); }
+    .expertise .section-lead { color: rgba(247,244,239,0.6); }
+
+    .expertise-list {
+      display: flex;
+      flex-direction: column;
+      gap: 0;
+      border-top: 1px solid rgba(247,244,239,0.1);
+    }
+
+    .expertise-item {
+      display: grid;
+      grid-template-columns: 60px 1fr 1fr;
+      gap: 40px;
+      align-items: start;
+      padding: 44px 0;
+      border-bottom: 1px solid rgba(247,244,239,0.1);
+      transition: background 0.3s;
+    }
+
+    .expertise-item:hover {
+      background: rgba(184,150,90,0.04);
+      margin: 0 -60px;
+      padding: 44px 60px;
+    }
+
+    .expertise-num {
+      font-family: 'Cormorant Garamond', serif;
+      font-size: 32px;
+      font-weight: 300;
+      color: rgba(184,150,90,0.4);
+      line-height: 1;
+      padding-top: 6px;
+    }
+
+    .expertise-item h3 {
+      font-family: 'Cormorant Garamond', serif;
+      font-size: 26px;
+      font-weight: 400;
+      color: var(--cream);
+      line-height: 1.25;
+    }
+
+    .expertise-item p {
+      font-size: 15px;
+      color: rgba(247,244,239,0.55);
+      line-height: 1.85;
+    }
+
+    /* ── MISSION / VISION ── */
+    .mission-vision {
+      background: var(--cream);
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 2px;
+    }
+
+    .mv-block {
+      background: var(--white);
+      padding: 70px 60px;
+    }
+
+    .mv-block:first-child {
+      border-right: none;
+    }
+
+    .mv-block h2 {
+      font-family: 'Cormorant Garamond', serif;
+      font-size: 40px;
+      font-weight: 300;
+      color: var(--deep);
+      margin-bottom: 8px;
+    }
+
+    .mv-block .gold-line {
+      width: 48px;
+      height: 2px;
+      background: var(--gold);
+      margin-bottom: 28px;
+    }
+
+    .mv-block p {
+      font-size: 16px;
+      color: var(--muted);
+      line-height: 1.9;
+    }
+
+    /* ── QUOTE BAND ── */
+    .quote-band {
+      background: var(--gold);
+      padding: 80px 60px;
+      text-align: center;
+    }
+
+    .quote-band blockquote {
+      font-family: 'Cormorant Garamond', serif;
+      font-size: clamp(26px, 3.5vw, 42px);
+      font-style: italic;
+      font-weight: 300;
+      color: var(--white);
+      max-width: 860px;
+      margin: 0 auto 24px;
+      line-height: 1.45;
+    }
+
+    .quote-band cite {
+      font-size: 12px;
+      font-style: normal;
+      letter-spacing: 0.2em;
+      text-transform: uppercase;
+      color: rgba(255,255,255,0.75);
+    }
+
+    /* ── CONTACT ── */
+    .contact-section {
+      background: var(--white);
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      min-height: 400px;
+    }
+
+    .contact-left {
+      padding: 80px 60px;
+    }
+
+    .contact-left h2 {
+      font-family: 'Cormorant Garamond', serif;
+      font-size: 42px;
+      font-weight: 300;
+      color: var(--deep);
+      margin-bottom: 20px;
+    }
+
+    .contact-left p {
+      font-size: 16px;
+      color: var(--muted);
+      line-height: 1.85;
+      margin-bottom: 40px;
+    }
+
+    .contact-details {
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+    }
+
+    .contact-detail {
+      display: flex;
+      flex-direction: column;
+      gap: 4px;
+    }
+
+    .contact-detail-label {
+      font-size: 10px;
+      font-weight: 600;
+      letter-spacing: 0.2em;
+      text-transform: uppercase;
+      color: var(--gold);
+    }
+
+    .contact-detail-value {
+      font-size: 16px;
+      color: var(--deep);
+      text-decoration: none;
+      transition: color 0.2s;
+    }
+
+    .contact-detail-value:hover { color: var(--gold); }
+
+    .contact-right {
+      background: var(--deep);
+      padding: 80px 60px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+    }
+
+    .contact-right h3 {
+      font-family: 'Cormorant Garamond', serif;
+      font-size: 32px;
+      font-weight: 300;
+      color: var(--cream);
+      margin-bottom: 28px;
+    }
+
+    .contact-right ul {
+      list-style: none;
+      display: flex;
+      flex-direction: column;
+      gap: 14px;
+    }
+
+    .contact-right li {
+      display: flex;
+      align-items: center;
+      gap: 14px;
+      font-size: 15px;
+      color: rgba(247,244,239,0.65);
+      line-height: 1.5;
+    }
+
+    .contact-right li::before {
+      content: '✦';
+      color: var(--gold);
+      font-size: 8px;
+      flex-shrink: 0;
+    }
+
+    /* ── FOOTER ── */
+    footer {
+      background: var(--deep);
+      border-top: 1px solid rgba(247,244,239,0.08);
+      padding: 48px 60px 32px;
+      display: flex;
+      flex-direction: column;
+      gap: 32px;
+    }
+
+    .footer-top {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+      gap: 20px;
+    }
+
+    .footer-brand {
+      font-family: 'Cormorant Garamond', serif;
+      font-size: 18px;
+      font-weight: 400;
+      color: rgba(247,244,239,0.8);
+    }
+
+    .footer-brand span {
+      display: block;
+      font-family: 'Jost', sans-serif;
+      font-size: 10px;
+      letter-spacing: 0.18em;
+      text-transform: uppercase;
+      color: var(--gold);
+      margin-top: 4px;
+    }
+
+    .footer-links {
+      display: flex;
+      gap: 28px;
+    }
+
+    .footer-links a {
+      font-size: 12px;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+      color: rgba(247,244,239,0.45);
+      text-decoration: none;
+      transition: color 0.2s;
+    }
+
+    .footer-links a:hover { color: var(--gold); }
+
+    /* Social Icons */
+    .footer-social {
+      display: flex;
+      align-items: center;
+      gap: 14px;
+      flex-wrap: wrap;
+    }
+
+    .footer-social-label {
+      font-size: 10px;
+      font-weight: 600;
+      letter-spacing: 0.2em;
+      text-transform: uppercase;
+      color: rgba(247,244,239,0.3);
+      margin-right: 4px;
+    }
+
+    .social-icon {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      width: 36px;
+      height: 36px;
+      border: 1px solid rgba(247,244,239,0.12);
+      color: rgba(247,244,239,0.5);
+      text-decoration: none;
+      font-size: 14px;
+      transition: border-color 0.25s, color 0.25s, background 0.25s;
+      border-radius: 2px;
+    }
+
+    .social-icon:hover {
+      border-color: var(--gold);
+      color: var(--gold);
+      background: rgba(184,150,90,0.08);
+    }
+
+    .footer-bottom {
+      border-top: 1px solid rgba(247,244,239,0.07);
+      padding-top: 24px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+      gap: 12px;
+    }
+
+    .footer-bottom p {
+      font-size: 11px;
+      color: rgba(247,244,239,0.3);
+      letter-spacing: 0.06em;
+    }
+
+
+    /* ── FOOTER SOCIAL ROW ── */
+    .footer-social-row {
+      display: flex;
+      align-items: center;
+      gap: 16px;
+      flex-wrap: wrap;
+      padding: 20px 0;
+      border-top: 1px solid rgba(255,255,255,0.1);
+      border-bottom: 1px solid rgba(255,255,255,0.1);
+    }
+
+    .footer-social-label {
+      font-size: 10px;
+      font-weight: 600;
+      letter-spacing: 0.22em;
+      text-transform: uppercase;
+      color: rgba(255,255,255,0.35);
+      white-space: nowrap;
+    }
+
+    .footer-social {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      flex-wrap: wrap;
+    }
+
+    .social-icon {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      width: 38px;
+      height: 38px;
+      border: 1px solid rgba(255,255,255,0.18);
+      color: rgba(255,255,255,0.55);
+      text-decoration: none;
+      transition: border-color 0.25s, color 0.25s, background 0.25s;
+      border-radius: 3px;
+    }
+
+    .social-icon:hover {
+      border-color: #ffffff;
+      color: #ffffff;
+      background: rgba(255,255,255,0.1);
+    }
+
+    .footer-top {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+      gap: 20px;
+      padding-bottom: 20px;
+    }
+
+    .footer-brand {
+      font-family: 'Cormorant Garamond', serif;
+      font-size: 18px;
+      font-weight: 400;
+      color: rgba(255,255,255,0.85);
+    }
+
+    .footer-brand span {
+      display: block;
+      font-family: 'Jost', sans-serif;
+      font-size: 10px;
+      letter-spacing: 0.18em;
+      text-transform: uppercase;
+      color: rgba(255,255,255,0.45);
+      margin-top: 4px;
+    }
+
+    .footer-bottom {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+      gap: 10px;
+      padding-top: 20px;
+    }
+
+    .footer-bottom p {
+      font-size: 11px;
+      color: rgba(255,255,255,0.3);
+      letter-spacing: 0.06em;
+    }
+
+    /* ── RESPONSIVE ── */
+    @media (max-width: 900px) {
+      nav { padding: 18px 24px; }
+      .nav-links { gap: 18px; }
+      .hero { grid-template-columns: 1fr; }
+      .hero-left { padding: 60px 24px; }
+      .hero-right { min-height: 360px; }
+      section { padding: 60px 24px; }
+      .about-preview { grid-template-columns: 1fr; gap: 0; }
+      .about-content { padding: 40px 24px; }
+      .about-visual { height: 300px; }
+      .competencies-grid { grid-template-columns: 1fr; }
+      .expertise-item { grid-template-columns: 40px 1fr; }
+      .expertise-item p { display: none; }
+      .mission-vision { grid-template-columns: 1fr; }
+      .contact-section { grid-template-columns: 1fr; }
+      .intro-strip { padding: 24px; flex-direction: column; align-items: flex-start; }
+      footer { padding: 30px 24px; flex-direction: column; align-items: flex-start; }
+      .hero-stats { gap: 24px; }
+    }
+
+    /* ── ANIMATIONS ── */
+    @keyframes fadeUp {
+      from { opacity: 0; transform: translateY(30px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+
+    .hero-eyebrow { animation: fadeUp 0.7s ease both; }
+    .hero-left h1 { animation: fadeUp 0.7s 0.15s ease both; }
+    .hero-left p { animation: fadeUp 0.7s 0.3s ease both; }
+    .hero-cta { animation: fadeUp 0.7s 0.45s ease both; }
+    .hero-stats { animation: fadeUp 0.7s 0.6s ease both; }
+  </style>
+
+  <!-- JSON-LD Structured Data for SEO -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Physician",
+    "name": "Dr Laith Barnouti",
+    "description": "FRACS-qualified Specialist Plastic and Reconstructive Surgeon based in Sydney, Australia with over 15 years of experience.",
+    "medicalSpecialty": "Plastic Surgery",
+    "url": "https://www.drlaithbarnouti.com.au",
+    "telephone": "+61-2-9561-0222",
+    "email": "drbarnouti@australiaplasticsurgery.com.au",
+    "address": {
+      "@type": "PostalAddress",
+      "addressLocality": "Sydney",
+      "addressRegion": "NSW",
+      "addressCountry": "AU"
+    },
+    "hasCredential": {
+      "@type": "EducationalOccupationalCredential",
+      "credentialCategory": "FRACS — Fellow of the Royal Australasian College of Surgeons"
+    }
+  }
+  </script>
+</head>
+
+<body>
+
+  <!-- NAVBAR -->
+  <nav aria-label="Main navigation">
+    <a href="index.html" class="nav-brand">
+      Dr Laith Barnouti
+      <span>Specialist Plastic Surgeon · Sydney</span>
+    </a>
+    <ul class="nav-links">
+      <li><a href="index.html" aria-current="page">Home</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="#expertise">Expertise</a></li>
+      <li><a href="#contact" class="btn-nav">Contact Us</a></li>
+    </ul>
+  </nav>
+
+  <!-- HERO -->
+  <header class="hero">
+    <div class="hero-left">
+      <p class="hero-eyebrow">FRACS · Sydney, Australia · 15+ Years Experience</p>
+      <h1>Leading Australian <em>Specialist Plastic</em> & Reconstructive Surgeon</h1>
+      <p>
+        Dr Laith Barnouti delivers transformative aesthetic and reconstructive outcomes through a combination of world-class surgical excellence, international training, and an unwavering commitment to patient safety — exclusively in fully accredited Sydney hospitals.
+      </p>
+      <div class="hero-cta">
+        <a href="#contact" class="btn-primary">Book a Consultation</a>
+        <a href="about.html" class="btn-outline">Meet Dr Barnouti</a>
+      </div>
+      <div class="hero-stats">
+        <div class="stat-item">
+          <div class="stat-number">15+</div>
+          <div class="stat-label">Years of Expertise</div>
+        </div>
+        <div class="stat-item">
+          <div class="stat-number">1000s</div>
+          <div class="stat-label">Successful Procedures</div>
+        </div>
+        <div class="stat-item">
+          <div class="stat-number">4</div>
+          <div class="stat-label">International Fellowships</div>
+        </div>
+      </div>
+    </div>
+    <div class="hero-right" aria-hidden="true">
+      <div class="hero-right-content">
+        <div class="hero-badge">FRACS Accredited Specialist</div>
+        <p>"Quality care and natural results help patients achieve a balanced appearance and renewed personal confidence."</p>
+        <cite>— Dr Laith Barnouti</cite>
+      </div>
+    </div>
+  </header>
+
+  <!-- CREDENTIALS STRIP -->
+  <div class="intro-strip" aria-label="Professional credentials">
+    <p>Professional Credentials &amp; Affiliations</p>
+    <div class="credentials">
+      <span class="credential-tag">FRACS Qualified</span>
+      <span class="credential-tag">UNSW Senior Lecturer</span>
+      <span class="credential-tag">International Fellowships: Sweden · Brazil · Belgium · USA</span>
+      <span class="credential-tag">Accredited Hospital Surgeon</span>
+    </div>
+  </div>
+
+  <!-- ABOUT PREVIEW -->
+  <section class="about-preview" id="about" aria-labelledby="about-heading">
+    <div class="about-visual" aria-hidden="true">
+      <div class="about-visual-inner">
+        <span class="monogram">LB</span>
+        <span class="fracs-badge">FRACS · UNSW Lecturer</span>
+      </div>
+    </div>
+    <div class="about-content">
+      <p class="section-eyebrow">About Dr Laith Barnouti</p>
+      <h2 class="section-title" id="about-heading">A Surgeon of Global Training & Local Dedication</h2>
+      <p>
+        Dr Laith Barnouti is a highly distinguished <strong>Specialist Plastic and Reconstructive Surgeon</strong> based in Sydney, Australia. With over 15 years of expert surgical experience, he has performed thousands of successful procedures, earning a reputation for technical excellence and a refined aesthetic eye.
+      </p>
+      <p>
+        As a <strong>Fellow of the Royal Australasian College of Surgeons (FRACS)</strong>, Dr Barnouti represents the highest level of surgical accreditation in Australia. His professional foundation is built on extensive international training, having completed advanced fellowships in world-renowned surgical hubs:
+      </p>
+      <div class="fellowship-list" aria-label="Fellowship locations">
+        <div class="fellowship-item">Sweden — Advanced Reconstructive Techniques</div>
+        <div class="fellowship-item">Brazil — Aesthetic & Body Contouring Surgery</div>
+        <div class="fellowship-item">Belgium — Microsurgery & Facial Procedures</div>
+        <div class="fellowship-item">USA — Cutting-Edge Surgical Innovation</div>
+      </div>
+      <p>
+        Beyond his clinical work, Dr Barnouti is a <strong>Conjoint Senior Lecturer at UNSW</strong> and a frequent media commentator, advocating for the highest ethical standards and patient safety within the Australian cosmetic industry.
+      </p>
+      <a href="about.html" class="btn-primary">Read Full Profile</a>
+    </div>
+  </section>
+
+  <!-- CORE COMPETENCIES -->
+  <section class="competencies" id="competencies" aria-labelledby="comp-heading">
+    <p class="section-eyebrow">Core Competencies</p>
+    <h2 class="section-title" id="comp-heading">Six Pillars of Surgical Excellence</h2>
+    <p class="section-lead">
+      Dr Laith Barnouti's practice is built upon six interconnected competencies that together deliver results of the highest clinical and aesthetic quality — ensuring every patient receives a comprehensive, safe, and personalised surgical experience.
+    </p>
+    <div class="competencies-grid">
+
+      <article class="comp-card">
+        <div class="comp-number">01</div>
+        <h3>Advanced Facial Rejuvenation</h3>
+        <p>
+          Expert in Deep-Plane Facelifts, Rhinoplasty, and Blepharoplasty. Dr Barnouti's approach focuses on structural integrity and natural harmony — delivering facial rejuvenation that looks entirely refreshed rather than "operated." Every treatment is tailored to the unique anatomy of the individual patient, prioritising long-term, balanced results that honour their natural facial character.
+        </p>
+      </article>
+
+      <article class="comp-card">
+        <div class="comp-number">02</div>
+        <h3>Specialist Breast Surgery</h3>
+        <p>
+          With a deep understanding of aesthetic proportions, Dr Barnouti excels in Breast Augmentation, Mastopexy (breast lift), and complex Breast Revision surgery. He utilises world-class techniques to ensure beautiful, symmetrical results while rigorously prioritising patient health and long-term wellbeing, tailoring every procedure to the individual's lifestyle and aesthetic goals.
+        </p>
+      </article>
+
+      <article class="comp-card">
+        <div class="comp-number">03</div>
+        <h3>Precision Body Contouring</h3>
+        <p>
+          Specialising in Abdominoplasty and High-Definition Liposuction, Dr Barnouti combines technical precision with an artistic eye to restore and enhance natural body curves. By focusing on refined contours and smooth transitions, he helps patients achieve a more proportionate silhouette while maintaining the highest standards of safety and clinical excellence throughout.
+        </p>
+      </article>
+
+      <article class="comp-card">
+        <div class="comp-number">04</div>
+        <h3>Short-Scar Surgical Innovation</h3>
+        <p>
+          A pioneer in minimal-incision techniques, Dr Barnouti's mastery of advanced "short-scar" methods ensures significantly less tissue trauma and reduced visible scarring. This innovative approach allows for a faster recovery process without any compromise to the aesthetic outcome — allowing patients to return to their daily lives more quickly with discreet, high-quality results.
+        </p>
+      </article>
+
+      <article class="comp-card">
+        <div class="comp-number">05</div>
+        <h3>Clinical Safety & Ethics</h3>
+        <p>
+          Operating exclusively in fully accredited Sydney hospitals, Dr Barnouti maintains a rigorous "Safety-First" protocol for every procedure. His practice adheres strictly to Australian clinical standards and ethical medical practices, ensuring every patient receives transparent, evidence-based care supported by professional medical teams and comprehensive post-operative hospital support.
+        </p>
+      </article>
+
+      <article class="comp-card">
+        <div class="comp-number">06</div>
+        <h3>Academic & Media Leadership</h3>
+        <p>
+          As a Conjoint Senior Lecturer at UNSW, Dr Barnouti is dedicated to surgical research and educating the next generation of specialists. As a frequent media commentator on major Australian networks, he advocates for patient rights and industry transparency, ensuring his practice consistently remains at the global forefront of modern plastic and reconstructive surgery.
+        </p>
+      </article>
+
+    </div>
+  </section>
+
+  <!-- EXPERTISE -->
+  <section class="expertise" id="expertise" aria-labelledby="exp-heading">
+    <p class="section-eyebrow">Areas of Expertise</p>
+    <h2 class="section-title" id="exp-heading">World-Class Expertise Across Every Discipline</h2>
+    <p class="section-lead">
+      Dr Laith Barnouti's surgical expertise spans the full spectrum of aesthetic and reconstructive procedures, each performed to an international standard of quality, safety, and artistry.
+    </p>
+    <div class="expertise-list" role="list">
+
+      <div class="expertise-item" role="listitem">
+        <div class="expertise-num">01</div>
+        <h3>Facial Aesthetic Surgery</h3>
+        <p>Deep-Plane Facelifts, Rhinoplasty, and Blepharoplasty performed with a focus on achieving a refreshed, youthful appearance by addressing deep tissue structures. Results are natural and consistent with the patient's unique facial character — without the typical "pulled" look of traditional surgery.</p>
+      </div>
+
+      <div class="expertise-item" role="listitem">
+        <div class="expertise-num">02</div>
+        <h3>Advanced Breast Procedures</h3>
+        <p>Full spectrum breast surgery including Augmentation, Reductions, Mastopexy, and complex Revision cases. Dr Barnouti is particularly sought after for his advanced techniques in correcting previous outcomes and restoring both aesthetic form and patient comfort with exceptional symmetry and proportion.</p>
+      </div>
+
+      <div class="expertise-item" role="listitem">
+        <div class="expertise-num">03</div>
+        <h3>Modern Body Contouring</h3>
+        <p>High-definition Liposuction and Abdominoplasty (Tummy Tuck) to restore body harmony. Expert in post-weight loss transformations, removing excess skin and tightening underlying muscles. Every procedure delivers smoothly refined contours, providing a more toned and proportionate physical silhouette.</p>
+      </div>
+
+      <div class="expertise-item" role="listitem">
+        <div class="expertise-num">04</div>
+        <h3>Short-Scar Specialist Techniques</h3>
+        <p>A hallmark of Dr Barnouti's expertise is the implementation of short-scar techniques across all procedures. These minimal-incision methods minimise visible scarring and significantly reduce patient recovery time, allowing patients to return to daily life faster while enjoying high-quality, discreet results that prioritise both aesthetics and physical healing.</p>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- MISSION & VISION -->
+  <section class="mission-vision" id="mission" aria-label="Mission and Vision">
+    <div class="mv-block">
+      <h2>Our Mission</h2>
+      <div class="gold-line"></div>
+      <p>
+        The core mission of this specialist practice is to empower individuals by delivering transformative aesthetic and reconstructive outcomes through a combination of surgical excellence and unwavering ethical integrity. Every patient journey is built upon a foundation of personalised care that deeply respects unique biological identity, ensuring that results are consistently natural, balanced, and harmonious.
+      </p>
+      <br />
+      <p>
+        By prioritising the person over the procedure, the goal is to enhance self-confidence while maintaining the highest clinical standards. A steadfast commitment exists to lead the industry in patient safety — operating exclusively within fully accredited hospital environments and utilising the most advanced, evidence-based surgical techniques. Every individual is well-informed, supported, and empowered throughout their entire surgical journey.
+      </p>
+    </div>
+    <div class="mv-block">
+      <h2>Our Vision</h2>
+      <div class="gold-line"></div>
+      <p>
+        The vision of this practice is to redefine the standards of plastic surgery in Australia by harmonising world-class innovation with uncompromising ethical care. The objective is to serve as a leading voice for surgical integrity, ensuring that every patient has access to specialist expertise that prioritises their long-term health and natural beauty over commercial trends.
+      </p>
+      <br />
+      <p>
+        By integrating global surgical advancements with meticulous techniques, the aim is to establish a future where natural-looking results are the universal benchmark of success. Through academic leadership at UNSW and professional advocacy, the practice fosters a safer, more transparent cosmetic industry — creating an environment where patient empowerment and clinical excellence always come first.
+      </p>
+    </div>
+  </section>
+
+  <!-- QUOTE BAND -->
+  <div class="quote-band" aria-label="Featured quote">
+    <blockquote>
+      "Quality care and natural results help patients achieve a balanced appearance and renewed personal confidence."
+    </blockquote>
+    <cite>Dr Laith Barnouti — Specialist Plastic & Reconstructive Surgeon, Sydney</cite>
+  </div>
+
+  <!-- CONTACT -->
+  <section class="contact-section" id="contact" aria-labelledby="contact-heading">
+    <div class="contact-left">
+      <p class="section-eyebrow">Get in Touch</p>
+      <h2 id="contact-heading">Begin Your Surgical Journey</h2>
+      <p>
+        Take the first step toward the results you deserve. Dr Laith Barnouti and his team are committed to providing a transparent, professional, and compassionate consultation experience — with no obligation and no pressure.
+      </p>
+      <div class="contact-details">
+        <div class="contact-detail">
+          <span class="contact-detail-label">Email</span>
+          <a href="mailto:drbarnouti@australiaplasticsurgery.com.au" class="contact-detail-value">drbarnouti@australiaplasticsurgery.com.au</a>
+        </div>
+        <div class="contact-detail">
+          <span class="contact-detail-label">Phone</span>
+          <a href="tel:+61295610222" class="contact-detail-value">+61 2 9561 0222</a>
+        </div>
+        <div class="contact-detail">
+          <span class="contact-detail-label">Location</span>
+          <span class="contact-detail-value">Sydney, New South Wales, Australia</span>
+        </div>
+      </div>
+    </div>
+    <div class="contact-right">
+      <h3>Why Choose Dr Barnouti?</h3>
+      <ul>
+        <li>FRACS-qualified — the highest surgical accreditation in Australia</li>
+        <li>International fellowships in Sweden, Brazil, Belgium & the USA</li>
+        <li>Pioneer in short-scar, minimal-incision surgical techniques</li>
+        <li>Conjoint Senior Lecturer at the University of New South Wales</li>
+        <li>Operates exclusively in fully accredited Sydney hospitals</li>
+        <li>Transparent, patient-centred care from consultation to recovery</li>
+        <li>Frequent media commentator on surgical safety & patient rights</li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer>
+    <div class="footer-top">
+      <div class="footer-brand">
+        Dr Laith Barnouti
+        <span>Specialist Plastic &amp; Reconstructive Surgeon &middot; Sydney, Australia</span>
+      </div>
+      <nav class="footer-links" aria-label="Footer navigation">
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </div>
+
+    <div class="footer-social-row">
+      <span class="footer-social-label">Follow Dr Barnouti</span>
+      <div class="footer-social">
+        <a href="https://www.facebook.com/DrLaithBarnouti/" target="_blank" rel="noopener noreferrer" class="social-icon" aria-label="Facebook" title="Facebook">
+          <svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewBox="0 0 24 24" fill="currentColor"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/></svg>
+        </a>
+        <a href="https://www.instagram.com/dr.Laith_barnouti" target="_blank" rel="noopener noreferrer" class="social-icon" aria-label="Instagram" title="Instagram">
+          <svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg>
+        </a>
+        <a href="https://www.linkedin.com/in/dr-barnouti-plastic-surgeon-sydney-843b4553/" target="_blank" rel="noopener noreferrer" class="social-icon" aria-label="LinkedIn" title="LinkedIn">
+          <svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewBox="0 0 24 24" fill="currentColor"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/><rect x="2" y="9" width="4" height="12"/><circle cx="4" cy="4" r="2"/></svg>
+        </a>
+        <a href="https://x.com/laithbarnouti1" target="_blank" rel="noopener noreferrer" class="social-icon" aria-label="X (Twitter)" title="X">
+          <svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewBox="0 0 24 24" fill="currentColor"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-4.714-6.231-5.401 6.231H2.746l7.73-8.835L1.254 2.25H8.08l4.253 5.622 5.912-5.622Zm-1.161 17.52h1.833L7.084 4.126H5.117Z"/></svg>
+        </a>
+        <a href="https://www.youtube.com/@drlaithbarnouti" target="_blank" rel="noopener noreferrer" class="social-icon" aria-label="YouTube" title="YouTube">
+          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M22.54 6.42a2.78 2.78 0 0 0-1.95-1.96C18.88 4 12 4 12 4s-6.88 0-8.59.46a2.78 2.78 0 0 0-1.95 1.96A29 29 0 0 0 1 12a29 29 0 0 0 .46 5.58A2.78 2.78 0 0 0 3.41 19.54C5.12 20 12 20 12 20s6.88 0 8.59-.46a2.78 2.78 0 0 0 1.95-1.96A29 29 0 0 0 23 12a29 29 0 0 0-.46-5.58z"/><polygon points="9.75 15.02 15.5 12 9.75 8.98 9.75 15.02" fill="white"/></svg>
+        </a>
+        <a href="https://au.pinterest.com/drlaithbarnoutiau/" target="_blank" rel="noopener noreferrer" class="social-icon" aria-label="Pinterest" title="Pinterest">
+          <svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.373 0 0 5.373 0 12c0 5.084 3.163 9.426 7.627 11.174-.105-.949-.2-2.405.042-3.441.218-.937 1.407-5.965 1.407-5.965s-.359-.719-.359-1.782c0-1.668.967-2.914 2.171-2.914 1.023 0 1.518.769 1.518 1.69 0 1.029-.655 2.568-.994 3.995-.283 1.194.599 2.169 1.777 2.169 2.133 0 3.772-2.249 3.772-5.495 0-2.873-2.064-4.882-5.012-4.882-3.414 0-5.418 2.561-5.418 5.207 0 1.031.397 2.138.893 2.738a.36.36 0 0 1 .083.345l-.333 1.36c-.053.22-.174.267-.402.161-1.499-.698-2.436-2.889-2.436-4.649 0-3.785 2.75-7.262 7.929-7.262 4.163 0 7.398 2.967 7.398 6.931 0 4.136-2.607 7.464-6.227 7.464-1.216 0-2.359-.632-2.75-1.378l-.748 2.853c-.271 1.043-1.002 2.35-1.492 3.146C9.57 23.812 10.763 24 12 24c6.627 0 12-5.373 12-12S18.627 0 12 0z"/></svg>
+        </a>
+        <a href="https://www.reddit.com/user/drlaith/" target="_blank" rel="noopener noreferrer" class="social-icon" aria-label="Reddit" title="Reddit">
+          <svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0A12 12 0 0 0 0 12a12 12 0 0 0 12 12 12 12 0 0 0 12-12A12 12 0 0 0 12 0zm5.01 4.744c.688 0 1.25.561 1.25 1.249a1.25 1.25 0 0 1-2.498.056l-2.597-.547-.8 3.747c1.824.07 3.48.632 4.674 1.488.308-.309.73-.491 1.207-.491.968 0 1.754.786 1.754 1.754 0 .716-.435 1.333-1.01 1.614a3.111 3.111 0 0 1 .042.52c0 2.694-3.13 4.87-7.004 4.87-3.874 0-7.004-2.176-7.004-4.87 0-.183.015-.366.043-.534A1.748 1.748 0 0 1 4.028 12c0-.968.786-1.754 1.754-1.754.463 0 .898.196 1.207.49 1.207-.883 2.878-1.43 4.744-1.487l.885-4.182a.342.342 0 0 1 .14-.197.35.35 0 0 1 .238-.042l2.906.617a1.214 1.214 0 0 1 1.108-.701zM9.25 12C8.561 12 8 12.562 8 13.25c0 .687.561 1.248 1.25 1.248.687 0 1.248-.561 1.248-1.249 0-.688-.561-1.249-1.249-1.249zm5.5 0c-.687 0-1.248.561-1.248 1.25 0 .687.561 1.248 1.249 1.248.688 0 1.249-.561 1.249-1.249 0-.687-.562-1.249-1.25-1.249zm-5.466 3.99a.327.327 0 0 0-.231.094.33.33 0 0 0 0 .463c.842.842 2.484.913 2.961.913.477 0 2.105-.056 2.961-.913a.361.361 0 0 0 .029-.463.33.33 0 0 0-.464 0c-.547.533-1.684.73-2.512.73-.828 0-1.979-.196-2.512-.73a.326.326 0 0 0-.232-.095z"/></svg>
+        </a>
+        <a href="https://drlaithbarnouti.tumblr.com/" target="_blank" rel="noopener noreferrer" class="social-icon" aria-label="Tumblr" title="Tumblr">
+          <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><path d="M14.563 24c-5.093 0-7.031-3.756-7.031-6.411V9.747H5.116V6.648c3.63-1.313 4.512-4.596 4.71-6.469C9.84.051 9.941 0 9.999 0h3.517v6.114h4.801v3.633h-4.82v7.47c.016 1.001.375 2.371 2.207 2.371h.09c.631-.02 1.486-.205 1.936-.419l1.156 3.425c-.436.636-2.4 1.374-4.323 1.406z"/></svg>
+        </a>
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <p>&copy; 2025 Dr Laith Barnouti. All rights reserved. Specialist Plastic &amp; Reconstructive Surgeon, Sydney Australia.</p>
+      <p>FRACS &middot; Conjoint Senior Lecturer UNSW &middot; Accredited Sydney Hospitals</p>
+    </div>
+  </footer>
+
+</body>
+</html>
